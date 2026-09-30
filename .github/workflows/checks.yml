@@ -1,0 +1,21 @@
+# The Project's gate on GitHub: the same checks the platform runs (ruff, pytest), required by the ruleset on
+# main, so no PR merges unless they pass on the exact commit being merged.
+name: checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: python -m pip install --quiet ruff pytest
+      - run: python -m ruff check .
+      - run: python -m pytest -q

@@ -1,0 +1,4 @@
+# The gate's configuration and the agents' instructions: a change needs a code owner's review.
+/.github/        @njt1980 @nimchungam
+/pyproject.toml  @njt1980 @nimchungam
+/CLAUDE.md       @njt1980 @nimchungam

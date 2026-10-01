@@ -1,0 +1,4 @@
+line-length = 110
+
+[lint.per-file-ignores]
+"tests/test_registry.py" = ["I001"]

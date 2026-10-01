@@ -2,6 +2,7 @@ import pytest
 
 from greeting import farewell, greet
 
+
 def test_greet() -> None:
     assert greet("CT") == "Hello, CT"
 

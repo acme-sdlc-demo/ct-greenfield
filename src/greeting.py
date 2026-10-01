@@ -3,7 +3,7 @@ def greet(name: str) -> str:
 
 
 def farewell(name: str) -> str:
-    """Return a farewell string for the given name."""
+    """Return a farewell string for the given name; raises TypeError for a non-str name, ValueError for an empty one."""
     if not isinstance(name, str):
         raise TypeError(f"name must be a str, got {name!r}")
     if name == "":

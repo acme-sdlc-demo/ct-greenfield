@@ -1,1 +1,1 @@
-FEATURES = ["alpha", "beta", "farewell", "shout"]
+FEATURES = ["alpha", "beta", "farewell"]

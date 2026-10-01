@@ -1,5 +1,6 @@
 from registry import FEATURES
 
+
 # AC-2: FEATURES contains "farewell" and preserves every pre-existing entry
 
 
